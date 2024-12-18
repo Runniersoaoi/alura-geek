@@ -1,0 +1,210 @@
+:root {
+  --color-purple-dark: #8c0375;
+  --color-magenta: #c004d9;
+  --color-purple-medium: #9303a6;
+  --color-purple-electric: #5d04d9;
+  --color-blue-navy: #03318c;
+  --color-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "system-ui";
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-white);
+}
+
+.pixelify-family {
+  font-family: "Pixelify Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header,
+footer {
+  background-color: var(--color-purple-electric);
+  color: var(--color-white);
+  padding: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.heart {
+  color: red;
+  font-size: 1.2rem;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: 2fr 3fr;
+  }
+}
+
+.form-section {
+  background-color: var(--color-white);
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input {
+  padding: 0.8rem;
+  border: 2px solid var(--color-blue-navy);
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--color-purple-electric);
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.4rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  flex: 1;
+}
+
+.btn-enviar {
+  background-color: var(--color-blue-navy);
+  color: white;
+}
+
+.btn-limpiar {
+  background-color: var(--color-white);
+  border: 2px solid var(--color-blue-navy);
+  color: var(--color-blue-navy);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  height: 610px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.product-card {
+  background-color: var(--color-purple-electric);
+  border: 2px solid var(--color-purple-medium);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  min-height: 340px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 1rem;
+}
+
+.product-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.product-price {
+  font-weight: bold;
+  color: var(--color-purple-dark);
+  color: white;
+}
+
+.cart-icon {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: var(--color-purple-electric);
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.product-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.btn-edit {
+  background-color: var(--color-purple-medium);
+  color: white;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+footer p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.error {
+  border-color: #dc3545 !important;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.8rem;
+  margin-top: -0.5rem;
+}

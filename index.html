@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <span class="heart">❤</span>
+        <span class="heart">❤</span>
+        <span class="heart">❤</span>
+        <h1 class="pixelify-family">AluraGeek</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="form-section">
+        <h2 class="pixelify-family">AGREGAR PRODUCTO:</h2>
+        <form id="productForm">
+          <input type="text" id="nombre" placeholder="nombre..." required />
+          <input
+            type="number"
+            id="precio"
+            placeholder="precio..."
+            required
+            min="0"
+            step="0.01"
+          />
+          <input type="url" id="imagen" placeholder="imagen..." required />
+          <div class="buttons">
+            <button type="submit" class="btn-enviar">Enviar</button>
+            <button type="button" class="btn-limpiar">Limpiar</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="products-section">
+        <h2 class="pixelify-family">MIS PRODUCTOS:</h2>
+        <div id="productGrid" class="product-grid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="logo">
+        <span class="heart">❤</span>
+        <span class="heart">❤</span>
+        <span class="heart">❤</span>
+        <h3 class="pixelify-family">AluraGeek</h3>
+      </div>
+      <p>DESARROLLADO POR MATIAS</p>
+      <p>ALURA LATAM - 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
